@@ -24,6 +24,6 @@ druid
 http://localhost:8062/test
 
 # 时序图
-![Image text](https://github.com/Yanyf765/service-rpc-kafka/master/img/uml.png)
+![Image text](https://github.com/Yanyf765/service-rpc-kafka/blob/master/img/uml.png)
 
 
