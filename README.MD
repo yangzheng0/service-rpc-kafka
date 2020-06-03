@@ -7,7 +7,7 @@ service-rpc-kafka
 ├── service-api -- 系统共用api模块
 ├── service-consumer -- rpc服务消费模块(8062)
 ├── service-producter-- rpc服务生产模块(8061)
-├── service-rpc-fail-dispose -- rpc失败服务处理模块(8061)
+├── service-rpc-fail-dispose -- rpc失败服务处理模块(8063)
 ├── sql -- 数据库初始化脚本
 ```
 # 使用技术说明
