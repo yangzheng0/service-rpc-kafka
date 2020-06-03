@@ -1,22 +1,22 @@
 package com.yangzheng.servicerpcfaildispose.schedule;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.mapper.Wrapper;
-import com.baomidou.mybatisplus.toolkit.StringUtils;
-import com.google.common.collect.Lists;
-import com.yangzheng.servicerpcfaildispose.dao.MallMqLogMapper;
-import com.yangzheng.servicerpcfaildispose.model.MallMqLog;
-import lombok.extern.slf4j.Slf4j;
-import net.sf.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.support.SendResult;
-import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
-import org.springframework.util.concurrent.ListenableFutureCallback;
+        import com.baomidou.mybatisplus.mapper.Wrapper;
+        import com.baomidou.mybatisplus.toolkit.StringUtils;
+        import com.google.common.collect.Lists;
+        import com.yangzheng.servicerpcfaildispose.dao.MallMqLogMapper;
+        import com.yangzheng.servicerpcfaildispose.model.MallMqLog;
+        import lombok.extern.slf4j.Slf4j;
+        import net.sf.json.JSONObject;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import org.springframework.kafka.core.KafkaTemplate;
+        import org.springframework.kafka.support.SendResult;
+        import org.springframework.scheduling.annotation.Scheduled;
+        import org.springframework.stereotype.Component;
+        import org.springframework.util.concurrent.ListenableFutureCallback;
 
-import java.util.Date;
-import java.util.List;
+        import java.util.Date;
+        import java.util.List;
 
 /**
  * @author yangzheng
@@ -35,7 +35,7 @@ public class RpcFailSchedule {
     @Autowired
     private KafkaTemplate<String, Object> kafkaTemplate;
 
-    @Scheduled(cron = "* */1 * * * ?")
+    @Scheduled(cron = "0 */1 * * * ?")
     public void handleFailRpc() {
         List<String> resList = Lists.newArrayList();
         Wrapper<MallMqLog> wrapper = new EntityWrapper<>();

@@ -41,6 +41,13 @@ public class RpcDisposeListener {
         if (message.isPresent()) {
             Object msg = message.get();
             log.info("mall_moonmall_statistical_success 消费了： Topic:" + topic + ",Message:" + msg);
+            JSONObject json = JSONObject.fromObject(record.value());
+            int id = json.getInt("id");
+            MallMqLog mallMqLog = new MallMqLog();
+            mallMqLog.setId(id);
+            mallMqLog.setMqStatus(2);
+            int affect = mallMqLogMapper.updateById(mallMqLog);
+            log.info("updateSuccessMq affect:{},{}", id, affect);
             ack.acknowledge();
         }
     }
