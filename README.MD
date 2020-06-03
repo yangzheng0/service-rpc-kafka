@@ -23,6 +23,9 @@ druid
 # 接口测试
 http://localhost:8062/test
 
+# 博客介绍
+https://blog.csdn.net/u012954380/article/details/106519171
+
 # 时序图
 ![Image text](https://github.com/Yanyf765/service-rpc-kafka/blob/master/img/uml.png)
 
