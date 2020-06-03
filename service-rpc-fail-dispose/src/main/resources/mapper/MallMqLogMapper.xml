@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yangzheng.servicerpcfaildispose.dao.MallMqLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yangzheng.servicerpcfaildispose.model.MallMqLog">
+        <id column="id" property="id" />
+        <result column="topic" property="topic" />
+        <result column="mq_key" property="mqKey" />
+        <result column="mq_value" property="mqValue" />
+        <result column="resend_times" property="resendTimes" />
+        <result column="mq_status" property="mqStatus" />
+        <result column="create_time" property="createTime" />
+        <result column="op_time" property="opTime" />
+    </resultMap>
+
+</mapper>
