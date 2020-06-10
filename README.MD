@@ -27,6 +27,6 @@ http://localhost:8062/test
 https://blog.csdn.net/u012954380/article/details/106519171
 
 # 时序图
-![Image text](https://github.com/Yanyf765/service-rpc-kafka/blob/master/img/uml.png)
+![Image text](https://img-blog.csdnimg.cn/20200603233623216.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTI5NTQzODA=,size_16,color_FFFFFF,t_70)
 
 
